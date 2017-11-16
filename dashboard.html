@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Lighthouse Progressive App Analytic website design and develop by Anurag Tiwari[ UI Developer] site http://iamanurag.site11.com, Wed, 5 NOV 2017 16:44:37 GMT -->
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LightHouse | Documentation</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/plugin.css">
+    <link rel="stylesheet" href="css/donut-chart.css">
+    <!-- <script type="text/javascript" src="js/mustache.js"></script> -->
+  </head>
+  <body >
+      <div class="wrapper">
+        <!-- header -->
+      <header class="main-header">
+          <a class="logo" href="#">Light<strong>House</strong></a>
+          <nav class="navbar navbar-static-top">
+              <a class="toggle-bar" href="#" id="menu-button"><i class="fa fa-reorder" aria-hidden="true"></i></a>
+              <!-- <span class="hd-title">DASHBOARD : CUSTOMER</span> -->
+                <div class="custom-menu">
+                <ul class="right-box">
+                  <!-- <li><a href="#" class="add-menu"><i class="fa fa-plus" aria-hidden="true"></i></a></li> -->
+                    <li><a class="logout" href="index.html"><b>Logout</b> <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+          </nav>
+          </header>
+        <!-- left side navigation -->
+    <aside id="hide-menu" class="main-sidebar">
+        <div class="sidebar">
+            <ul class="sidebar-menu">
+                <li class="active"><a class="active" id="pwa1"  href="#" >Progressive Web App</a></li>
+                <li class=""><a id="percard1"  href="#" >Performance</a></li>
+                <li class=""><a id="acesscard1"  href="#" >Accessibility</a></li>
+                <li class=""><a id="practicecard1"  href="#" >Best Practices</a></li>
+<!--                 <li class="dropdown"><a id="drop-down" href="#" >Best Practices <i class="fa fa-chevron-right" style="float:right" aria-hidden="true"></i></a>
+                    <ul id="002" class="sub-menue">
+                        <li><a class="" href="">NEFT</a></li>
+                        <li><a class="" href="">PAYTM</a></li>
+                        <li><a class="" href="">PAY U Money</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        
+        </div>
+          </aside>
+          
+        <!-- main body -->
+<div id="full-slide" class="content-wrapper" style="min-height: 358px;">
+<!--           <div class="content-header">
+              <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active"><span style="color:#aaa; margin-right:2px; font-size:10px;"><i class="fa fa-angle-right" aria-hidden="true"></i></span> Documentation</li>
+              </ol>
+        </div> -->
+
+<div id="DASHBOARD" class="content body">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-xs-12 col-lg-4">
+        <!-- DONUT CHART BLOCK (LEFT-CONTAINER) --> 
+      <div id="pwa" class="donut-chart-block block"> 
+                        <h2 class="titular">PROGRESSIVE WEB APP</h2>
+                        <div class="donut-chart">
+                          <div class="huge-chartbox">
+                            <div id="failureChart1" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;30&quot;,&quot;#19C5F5&quot;],  &quot;1&quot;:[&quot;30&quot;,&quot;70&quot;,&quot;#ecebeb&quot;] }" data-chart-text="30%" data-chart-caption="Successfully Rate" data-chart-initial-rotate="180"></div>
+                            </div>
+                        </div>
+                        <ul class="os-percentages horizontal-list">
+                            <li>
+                                <p class="ios os scnd-font-color">Successfully Rate</p>
+                                <p class="os-percentage">30<sup>%</sup></p>
+                            </li>
+                            <li>
+                                <p class="mac os scnd-font-color">Failure Rate</p>
+                                <p class="os-percentage">60<sup>%</sup></p>
+                            </li>
+                        </ul>
+                    </div>
+    </div>
+    <div class="col-md-8 col-xs-12 col-lg-8">
+        <!-- DONUT CHART BLOCK (LEFT-CONTAINER) --> 
+        <div id="percard" class="donut-chart-block block block-2"> 
+              <h2 class="titular">Performance</h2>
+              <div class="">
+                <div class="col-md-6 col-xs-12">
+                  <div class="donut-chart">
+                    <div class="huge-chartbox">
+                       <div id="thingsChart1" chart-type="donut" data-chart-max="100" data-chart-segments="{  &quot;0&quot;:[&quot;0&quot;,&quot;60&quot;,&quot;#F18605&quot;],  &quot;1&quot;:[&quot;60&quot;,&quot;40&quot;, &quot;#ecebeb&quot;]  }" data-chart-text="60" data-chart-caption="Performance Rate"></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                  <div id="external-events" class="external-events">
+                    <div class="event-header">
+                      <span>Metrics</span>
+                    </div>
+                    <div class="event-header">
+                      <span>Opportunities</span>
+                    </div>
+                    <div class="event-header">
+                      <span>Diagnostics</span>
+                    </div>
+                    <div class="event-header">
+                      <span>4 Passed Audits</span>
+                    </div>                    
+<!--                     <div class="event-body">
+                      <div class="fc-event ">First meaningful paint</div>
+                      <div class="fc-event ">First Interactive (beta)</div>
+                      <div class="fc-event ">Consistently Interactive (beta)</div>
+                      <div class="fc-event ">Perceptual Speed Index:  21,991 (target: < 1,250)</div>
+                      <div class="fc-event ">Estimated Input Latency:  1,824 ms (target: < 50 ms)</div>
+                    </div> -->
+                </div>
+                </div>
+              </div>
+          </div>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-12 col-xs-12 col-lg-12">
+        <!-- DONUT CHART BLOCK (LEFT-CONTAINER) --> 
+        <div id="acesscard" class="donut-chart-block block block-2"> 
+              <h2 class="titular">Accessibility</h2>
+              <div class="">
+                <div class="col-md-4 col-xs-12">
+                  <div class="donut-chart">
+                    <div class="huge-chartbox">
+                         <div id="failureChart3" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;50&quot;,&quot;#19A7F5&quot;], &quot;1&quot;:[&quot;50&quot;,&quot;50&quot;,&quot;#55DB2E&quot;] }" data-chart-text="50%" data-chart-caption="Accessibility Rate"></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <div id="external-events" class="external-events">
+                    <div class="event-header">
+                      <span>Elements Use Attributes Correctly</span>
+                    </div>
+                    <div class="event-header">
+                      <span>ARIA Attributes Follow Best Practices</span>
+                    </div>
+                    <div class="event-header">
+                      <span>Elements Have Discernable Names</span>
+                    </div>
+                    <div class="event-header">
+                      <span>Elements Describe Contents Well</span>
+                    </div>                                       
+                </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <div id="external-events" class="external-events">
+                    <div class="event-header">
+                      <span>Elements Are Well Structured</span>
+                    </div>  
+                    <div class="event-header">
+                      <span>Page Specifies Valid Language</span>
+                    </div>  
+                    <div class="event-header">
+                      <span>Meta Tags Used Properly</span>
+                    </div>                                       
+                </div>
+                </div>                
+              </div>
+          </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 col-xs-12 col-lg-12">
+        <!-- DONUT CHART BLOCK (LEFT-CONTAINER) --> 
+        <div id="practicecard" class="donut-chart-block block block-2"> 
+              <h2 class="titular">Best Practices</h2>
+              <div class="">
+                <div class="col-md-4 col-xs-12">
+                  <div class="donut-chart">
+                    <div class="huge-chartbox">
+                         <div id="chart3" chart-type="donut" data-chart-max="100" data-chart-segments="{  &quot;0&quot;:[&quot;0&quot;,&quot;85&quot;,&quot;#FDCA00&quot;], &quot;1&quot;:[&quot;85&quot;,&quot;85&quot;,&quot;#8100C8&quot;]  }" data-chart-initial-rotate="90" data-chart-caption="Best Practices" data-chart-text="70%"></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                      <ul class="os-percentages full horizontal-list">
+                            <li>
+                                <p class="mac os scnd-font-color">Passed Audits</p>
+                                <p class="os-percentage">7
+                                <!-- <sup>%</sup> -->
+                                </p>
+                                <div id="external-events" class="external-events">
+                                    <div class="event-header">
+                                      <span>Avoids Application Cache</span>
+                                    </div>  
+                                    <div class="event-header">
+                                      <span>Avoids WebSQL DB</span>
+                                    </div>  
+                                    <div class="event-header">
+                                      <span>Avoids Mutation Events in its own scripts</span>
+                                    </div>   
+                                    <div class="event-header">
+                                      <span>Avoids requesting the geolocation permission on page load</span>
+                                    </div>  
+                                    <div class="event-header">
+                                      <span>Avoids requesting the notification permission on page load</span>
+                                    </div>  
+                                    <div class="event-header">
+                                      <span>Avoids deprecated APIs</span>
+                                    </div>  
+                                    <div class="event-header">
+                                      <span>Allows users to paste into password fields</span>
+                                    </div>                                                                                                
+                                </div>
+                            </li>
+                        </ul>                                       
+                </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                      <ul class="os-percentages full horizontal-list">
+                            <li>
+                                <p class="ios os scnd-font-color">Failed Audits</p>
+                                <p class="os-percentage">9
+                                <!-- <sup>%</sup> -->
+                                </p>
+                                  <div id="external-events" class="external-events">
+                                    <div class="event-header">
+                                      <span>Does not use HTTPS</span>
+                                    </div>  
+                                    <div class="event-header">
+                                      <span>Does not use HTTP/2 for all of its resources</span>
+                                    </div>  
+                                    <div class="event-header">
+                                      <span>Does not use passive listeners to improve scrolling performance</span>
+                                    </div>   
+                                    <div class="event-header">
+                                      <span>Uses document.write()</span>
+                                    </div>  
+                                    <div class="event-header">
+                                      <span>Does not open external anchors using rel="noopener"</span>
+                                    </div>  
+                                    <div class="event-header">
+                                      <span>Includes front-end JavaScript libraries with known security vulnerabilities</span>
+                                    </div> 
+                                    <div class="event-header">
+                                      <span>Manifest's short_name will be truncated when displayed on homescreen</span>
+                                    </div>  
+                                    <div class="event-header">
+                                      <span>Browser errors were logged to the console</span>
+                                    </div>  
+                                    <div class="event-header">
+                                      <span>Includes front-end JavaScript libraries with known security vulnerabilities</span>
+                                    </div> 
+                                    <div class="event-header">
+                                      <span>Does not uses Images with appropriate aspect ratio</span>
+                                    </div> 
+
+
+                                </div>
+                            </li>
+                        </ul> 
+                </div>                
+              </div>
+          </div>
+    </div>
+
+  </div>
+</div>
+ <!-- progressive web app page -->
+<div id="progressiveapp" class="content body" style="display: none;">
+  <a href="#" id="crossbtn01" class="cross-close"><i class="fa fa-remove" aria-hidden="true"></i></a>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 col-xs-12">
+        <!-- DONUT CHART BLOCK (LEFT-CONTAINER) --> 
+        <div class="donut-chart-block block block-2"> 
+              <div class="">
+                <div class="col-md-9 col-xs-12">
+                  <div id="external-events" class="external-events">
+                    <div class="event-header event-header2">
+                      <span>Progressive Web App</span>
+                    </div>                    
+                    <div class="event-body event-body-2">
+                      <div class="fc-event fc-event-2">These checks validate the aspects of a Progressive Web App, as specified by the baseline PWA Checklist.</div>
+<!--                       <div class="fc-event ">First Interactive (beta)</div>
+                      <div class="fc-event ">Consistently Interactive (beta)</div>
+                      <div class="fc-event ">Perceptual Speed Index:  21,991 (target: < 1,250)</div>
+                      <div class="fc-event ">Estimated Input Latency:  1,824 ms (target: < 50 ms)</div> -->
+                    </div>
+<!--- accordian block -->
+          <div class="page-accordian-block">
+<!--               <div class="accordion-page-header">
+                <h2>Metrics</h2>
+                <p>These metrics encapsulate your app's performance across a number of dimensions.</p>
+                </div> -->
+             <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="slide-container">
+                    <div class="list-group" id="mg-multisidetabs">
+                      <a href="#" class="list-group-item"><span>First meaningful paint</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div><!-- ./ end list-group -->
+                  </div><!-- ./ end slide-container -->
+                </div><!-- ./ end panel-body -->
+              </div><!-- ./ end panel panel-default-->
+          </div>
+</div>
+                </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <div class="donut-chart" style="margin-top: 60px;">
+                    <div class="chartbox"">
+                        <div id="failureChart" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;30&quot;,&quot;#19A7F5&quot;],  &quot;1&quot;:[&quot;30&quot;,&quot;70&quot;,&quot;#ecebeb&quot;] }" data-chart-text="30%" data-chart-caption="Failure Rate" data-chart-initial-rotate="180"></div>
+                      </div>
+                    </div>
+                </div>
+
+              </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- Performence web page details -->
+<div id="performancepage" class="content body" style="display: none;">
+  <a href="#" id="crossbtn02" class="cross-close"><i class="fa fa-remove" aria-hidden="true"></i></a>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 col-xs-12">
+        <!-- DONUT CHART BLOCK (LEFT-CONTAINER) --> 
+        <div class="donut-chart-block block block-2"> 
+              <div class="">
+                <div class="col-md-9 col-xs-12">
+                  <div id="external-events" class="external-events">
+                    <div class="event-header event-header2">
+                      <span>Performance</span>
+                    </div>                    
+                    <div class="event-body event-body-2">
+                      <div class="fc-event fc-event-2">These encapsulate your app's current performance and opportunities to improve it.</div>
+                    </div>
+          <div class="page-accordian-block">
+              <div class="accordion-page-header">
+                <h2>Metrics</h2>
+                <p>These metrics encapsulate your app's performance across a number of dimensions.</p>
+                </div>
+                    <div class="event-body metric-wraper">
+                      <div class="matric-block">
+                        <div class="o-stack-cell">
+                          <a href="JavaScript:void(0);" class="c-status"></a>
+                        </div>
+                        <div class="o-stack-content">
+                          <div class="o-stack-unit">2.2s</div>
+                          <div class="o-stack-content-detail"><img src="Images/o-stack-img1.png"></div>
+                        </div>
+                      </div>
+                      <div class="matric-block">
+                        <div class="o-stack-cell">
+                          <a href="JavaScript:void(0);" class="c-status"></a>
+                        </div>
+                        <div class="o-stack-content">
+                          <div class="o-stack-unit">4.4s</div>
+                          <div class="o-stack-content-detail"><img src="Images/o-stack-img2.png"></div>
+                        </div>
+                      </div>
+                      <div class="matric-block">
+                        <div class="o-stack-cell">
+                          <a href="JavaScript:void(0);" class="c-status"></a>
+                        </div>
+                        <div class="o-stack-content">
+                          <div class="o-stack-unit">8.8s</div>
+                          <div class="o-stack-content-detail"><img src="Images/o-stack-img3.png"></div>
+                        </div>
+                      </div>
+                      <div class="matric-block">
+                        <div class="o-stack-cell">
+                          <a href="JavaScript:void(0);" class="c-status"></a>
+                        </div>
+                        <div class="o-stack-content">
+                          <div class="o-stack-unit">11s</div>
+                          <div class="o-stack-content-detail"><img src="Images/o-stack-img4.png"></div>
+                        </div>
+                      </div>
+                      <div class="matric-block">
+                        <div class="o-stack-cell">
+                          <a href="JavaScript:void(0);" class="c-status"></a>
+                        </div>
+                        <div class="o-stack-content">
+                          <div class="o-stack-unit">13.2s</div>
+                          <div class="o-stack-content-detail"><img src="Images/o-stack-img5.png"></div>
+                        </div>
+                      </div>
+                      <div class="matric-block">
+                        <div class="o-stack-cell">
+                          <a href="JavaScript:void(0);" class="c-status"></a>
+                        </div>
+                        <div class="o-stack-content">
+                          <div class="o-stack-unit">15.6s</div>
+                          <div class="o-stack-content-detail"><img src="Images/o-stack-img6.png"></div>
+                        </div>
+                      </div>
+                      <div class="matric-block">
+                        <div class="o-stack-cell">
+                          <a href="JavaScript:void(0);" class="c-status"></a>
+                        </div>
+                        <div class="o-stack-content">
+                          <div class="o-stack-unit">11s</div>
+                          <div class="o-stack-content-detail"><img src="Images/o-stack-img4.png"></div>
+                        </div>
+                      </div>
+                      <div class="matric-block">
+                        <div class="o-stack-cell">
+                          <a href="JavaScript:void(0);" class="c-status"></a>
+                        </div>
+                        <div class="o-stack-content">
+                          <div class="o-stack-unit">13.2s</div>
+                          <div class="o-stack-content-detail"><img src="Images/o-stack-img5.png"></div>
+                        </div>
+                      </div>
+                      <div class="matric-block">
+                        <div class="o-stack-cell">
+                          <a href="JavaScript:void(0);" class="c-status"></a>
+                        </div>
+                        <div class="o-stack-content">
+                          <div class="o-stack-unit">15.6s</div>
+                          <div class="o-stack-content-detail"><img src="Images/o-stack-img6.png"></div>
+                        </div>
+                      </div>
+                    </div>
+             <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="slide-container">
+                    <div class="list-group" id="mg-multisidetabs">
+                      <a href="#" class="list-group-item"><span>First meaningful paint</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div><!-- ./ end list-group -->
+                  </div><!-- ./ end slide-container -->
+                </div><!-- ./ end panel-body -->
+              </div><!-- ./ end panel panel-default-->
+          </div>
+<!--- accordian block -->
+          <div class="page-accordian-block">
+              <div class="accordion-page-header">
+                <h2>Opportunities</h2>
+                <p>These metrics encapsulate your app's performance across a number of dimensions.</p>
+                </div>
+             <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="slide-container">
+                    <div class="list-group" id="mg-multisidetabs">
+                      <a href="#" class="list-group-item"><span>First meaningful paint</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div><!-- ./ end list-group -->
+                  </div><!-- ./ end slide-container -->
+                </div><!-- ./ end panel-body -->
+              </div><!-- ./ end panel panel-default-->
+          </div>
+<!--- accordian block -->
+          <div class="page-accordian-block">
+              <div class="accordion-page-header">
+                <h2>Diagnostics</h2>
+                <p>These metrics encapsulate your app's performance across a number of dimensions.</p>
+                </div>
+             <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="slide-container">
+                    <div class="list-group" id="mg-multisidetabs">
+                      <a href="#" class="list-group-item"><span>First meaningful paint</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div><!-- ./ end list-group -->
+                  </div><!-- ./ end slide-container -->
+                </div><!-- ./ end panel-body -->
+              </div><!-- ./ end panel panel-default-->
+          </div>
+</div>
+                </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <div class="donut-chart" style="margin-top: 60px;">
+                    <div class="chartbox"">
+                        <div id="thingsChart1" chart-type="donut" data-chart-max="100" data-chart-segments="{  &quot;0&quot;:[&quot;0&quot;,&quot;60&quot;,&quot;#F18605&quot;],  &quot;1&quot;:[&quot;60&quot;,&quot;40&quot;, &quot;#ecebeb&quot;]  }" data-chart-text="60" data-chart-caption="Performance Rate"></div>
+                      </div>
+                    </div>
+                </div>
+
+              </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- Performence web page details -->
+<div id="accessibilitypage" class="content body" style="display: none;">
+  <a href="#" id="crossbtn03" class="cross-close"><i class="fa fa-remove" aria-hidden="true"></i></a>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 col-xs-12">
+        <!-- DONUT CHART BLOCK (LEFT-CONTAINER) --> 
+        <div class="donut-chart-block block block-2"> 
+              <div class="">
+                <div class="col-md-9 col-xs-12">
+                  <div id="external-events" class="external-events">
+                    <div class="event-header event-header2">
+                      <span>Accessibility</span>
+                    </div>                    
+                    <div class="event-body event-body-2">
+                      <div class="fc-event fc-event-2">These checks highlight opportunities to improve the accessibility of your app.</div>
+<!--                       <div class="fc-event ">First Interactive (beta)</div>
+                      <div class="fc-event ">Consistently Interactive (beta)</div>
+                      <div class="fc-event ">Perceptual Speed Index:  21,991 (target: < 1,250)</div>
+                      <div class="fc-event ">Estimated Input Latency:  1,824 ms (target: < 50 ms)</div> -->
+                    </div>
+<!--- accordian block -->
+          <div class="page-accordian-block">
+              <div class="accordion-page-header">
+                <h2>Elements Use Attributes Correctly</h2>
+                <p>These are opportunities to improve the configuration of your HTML elements.</p>
+                </div>
+             <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="slide-container">
+                    <div class="list-group" id="mg-multisidetabs">
+                      <a href="#" class="list-group-item"><span>Image elements do not have [alt] attributes.</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute.Learn more.
+                                    <br>
+                                    <div class="blue-code">
+                                      <div class="lh-list__items"><span class="lh-list__item"><span class="lh-node" title="#body > img:nth-child(30)" data-path="1,HTML,1,BODY,33,IMG" data-selector="#body > img:nth-child(30)" data-snippet="<img src=&quot;https://www.googleadservices.com/pagead/conversion/993055450/?label=gBABCNjW_XEQ2qXD2QM&amp;amp;guid=ON&amp;amp;script=0&quot; width=&quot;1&quot; height=&quot;1&quot; style=&quot;position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0;&quot;>">&lt;img src="https://www.googleadservices.com/pagead/conversion/993055450/?label=gBABCNjW_XEQ2qXD2QM&amp;amp;guid=ON&amp;amp;script=0" width="1" height="1" style="position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0;"&gt;</span></span><span class="lh-list__item"><span class="lh-node" title="#body > img:nth-child(31)" data-path="1,HTML,1,BODY,34,IMG" data-selector="#body > img:nth-child(31)" data-snippet="<img src=&quot;https://6870903.fls.doubleclick.net/activityi;src=6870903;type=invmedia;cat=w5osr01q;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1&quot; width=&quot;1&quot; height=&quot;1&quot; style=&quot;position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0;&quot;>">&lt;img src="https://6870903.fls.doubleclick.net/activityi;src=6870903;type=invmedia;cat=w5osr01q;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1" width="1" height="1" style="position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0;"&gt;</span></span><span class="lh-list__item"><span class="lh-node" title="#body > img:nth-child(32)" data-path="1,HTML,1,BODY,35,IMG" data-selector="#body > img:nth-child(32)" data-snippet="<img src=&quot;https://ads.instabid.tech/s?s=divi&quot; width=&quot;1&quot; height=&quot;1&quot; style=&quot;position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0;&quot;>">&lt;img src="https://ads.instabid.tech/s?s=divi" width="1" height="1" style="position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0;"&gt;</span></span><span class="lh-list__item"><span class="lh-node" title="h3 > img.smile" data-path="1,HTML,1,BODY,44,FORM,34,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,1,DIV,0,DIV,1,DIV,0,H3,1,IMG" data-selector="h3 > img.smile" data-snippet="<img src=&quot;https://www.dishtv.in/images/home/banner/mynorthpack-smile.png&quot; class=&quot;smile&quot;>">&lt;img src="https://www.dishtv.in/images/home/banner/mynorthpack-smile.png" class="smile"&gt;</span></span><span class="lh-list__item"><span class="lh-node" title="div:nth-child(1) > img[src$=&quot;dish99-tv-icon.png&quot;]" data-path="1,HTML,1,BODY,44,FORM,34,DIV,2,DIV,7,DIV,0,DIV,2,DIV,0,DIV,0,IMG" data-selector="div:nth-child(1) > img[src$=&quot;dish99-tv-icon.png&quot;]" data-snippet="<img src=&quot;/images/dish99-tv-icon.png&quot;>">&lt;img src="/images/dish99-tv-icon.png"&gt;</span></span><span class="lh-list__item"><span class="lh-node" title="div:nth-child(2) > img[src$=&quot;max-sports-tv-icon.png&quot;]" data-path="1,HTML,1,BODY,44,FORM,34,DIV,2,DIV,7,DIV,0,DIV,2,DIV,1,DIV,0,IMG" data-selector="div:nth-child(2) > img[src$=&quot;max-sports-tv-icon.png&quot;]" data-snippet="<img src=&quot;/images/max-sports-tv-icon.png&quot;>">&lt;img src="/images/max-sports-tv-icon.png"&gt;</span></span><span class="lh-list__item"><span class="lh-node" title="div:nth-child(3) > img[src$=&quot;new-titanium-tv-icon.png&quot;]" data-path="1,HTML,1,BODY,44,FORM,34,DIV,2,DIV,7,DIV,0,DIV,2,DIV,2,DIV,0,IMG" data-selector="div:nth-child(3) > img[src$=&quot;new-titanium-tv-icon.png&quot;]" data-snippet="<img src=&quot;/images/new-titanium-tv-icon.png&quot;>">&lt;img src="/images/new-titanium-tv-icon.png"&gt;</span></span><span class="lh-list__item"><span class="lh-node" title=".carousel-center > img[src$=&quot;cooking-active-banner.jpg&quot;]" data-path="1,HTML,1,BODY,44,FORM,34,DIV,2,DIV,9,DIV,0,DIV,1,DIV,2,DIV,0,IMG" data-selector=".carousel-center > img[src$=&quot;cooking-active-banner.jpg&quot;]" data-snippet="<img src=&quot;https://www.dishtv.in/images/cooking-active-banner.jpg&quot; style=&quot;opacity: 1;&quot;>">&lt;img src="https://www.dishtv.in/images/cooking-active-banner.jpg" style="opacity: 1;"&gt;</span></span><span class="lh-list__item"><span class="lh-node" title="div:nth-child(2) > img[src$=&quot;fifa-offer-banner.jpg&quot;]" data-path="1,HTML,1,BODY,44,FORM,34,DIV,2,DIV,9,DIV,0,DIV,1,DIV,4,DIV,0,IMG" data-selector="div:nth-child(2) > img[src$=&quot;fifa-offer-banner.jpg&quot;]" data-snippet="<img src=&quot;https://www.dishtv.in/images/fifa-offer-banner.jpg&quot; style=&quot;opacity: 1;&quot;>">&lt;img src="https://www.dishtv.in/images/fifa-offer-banner.jpg" style="opacity: 1;"&gt;</span></span><span class="lh-list__item"><span class="lh-node" title="div:nth-child(3) > img[src$=&quot;payterm-offer-banner.jpg&quot;]" data-path="1,HTML,1,BODY,44,FORM,34,DIV,2,DIV,9,DIV,0,DIV,1,DIV,7,DIV,0,IMG" data-selector="div:nth-child(3) > img[src$=&quot;payterm-offer-banner.jpg&quot;]" data-snippet="<img src=&quot;https://www.dishtv.in/images/payterm-offer-banner.jpg&quot; style=&quot;opacity: 1;&quot;>">&lt;img src="https://www.dishtv.in/images/payterm-offer-banner.jpg" style="opacity: 1;"&gt;</span></span><span class="lh-list__item"><span class="lh-node" title="#offers > .container > .offer-slider > div:nth-child(4) > img" data-path="1,HTML,1,BODY,44,FORM,34,DIV,2,DIV,9,DIV,0,DIV,1,DIV,8,DIV,0,IMG" data-selector="#offers > .container > .offer-slider > div:nth-child(4) > img" data-snippet="<img src=&quot;https://www.dishtv.in/images/hd-special-offer-banner.jpg&quot; style=&quot;opacity: 1;&quot;>">&lt;img src="https://www.dishtv.in/images/hd-special-offer-banner.jpg" style="opacity: 1;"&gt;</span></span><span class="lh-list__item"><span class="lh-node" title="div:nth-child(5) > img[src$=&quot;diwali-home-offers.jpg&quot;]" data-path="1,HTML,1,BODY,44,FORM,34,DIV,2,DIV,9,DIV,0,DIV,1,DIV,10,DIV,0,IMG" data-selector="div:nth-child(5) > img[src$=&quot;diwali-home-offers.jpg&quot;]" data-snippet="<img src=&quot;https://www.dishtv.in/images/diwali-home-offers.jpg&quot; style=&quot;opacity: 1;&quot;>">&lt;img src="https://www.dishtv.in/images/diwali-home-offers.jpg" style="opacity: 1;"&gt;</span></span><span class="lh-list__item"><span class="lh-node" title="div:nth-child(6) > img[src$=&quot;dish-care-offer-bnr.jpg&quot;]" data-path="1,HTML,1,BODY,44,FORM,34,DIV,2,DIV,9,DIV,0,DIV,1,DIV,12,DIV,0,IMG" data-selector="div:nth-child(6) > img[src$=&quot;dish-care-offer-bnr.jpg&quot;]" data-snippet="<img src=&quot;https://www.dishtv.in/images/dish-care-offer-bnr.jpg&quot; style=&quot;opacity: 1;&quot;>">&lt;img src="https://www.dishtv.in/images/dish-care-offer-bnr.jpg" style="opacity: 1;"&gt;</span></span><span class="lh-list__item"><span class="lh-node" title=".br.ftanew > img[src$=&quot;fta-offer-banner.jpg&quot;]" data-path="1,HTML,1,BODY,44,FORM,34,DIV,2,DIV,9,DIV,0,DIV,1,DIV,13,DIV,0,IMG" data-selector=".br.ftanew > img[src$=&quot;fta-offer-banner.jpg&quot;]" data-snippet="<img src=&quot;https://www.dishtv.in/images/fta-offer-banner.jpg&quot; style=&quot;opacity: 1;&quot;>">&lt;img src="https://www.dishtv.in/images/fta-offer-banner.jpg" style="opacity: 1;"&gt;</span></span><span class="lh-list__item"><span class="lh-node" title="#PageWapper > img" data-path="1,HTML,1,BODY,44,FORM,34,DIV,28,IMG" data-selector="#PageWapper > img" data-snippet="<img src=&quot;https://www.googleadservices.com/pagead/conversion/993055450/?label=FVmhCOftg3IQ2qXD2QM&amp;amp;guid=ON&amp;amp;script=0&quot; width=&quot;1&quot; height=&quot;1&quot; style=&quot;position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0;&quot;>">&lt;img src="https://www.googleadservices.com/pagead/conversion/993055450/?label=FVmhCOftg3IQ2qXD2QM&amp;amp;guid=ON&amp;amp;script=0" width="1" height="1" style="position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0;"&gt;</span></span><span class="lh-list__item"><span class="lh-node" title="#body > img:nth-child(50)" data-path="1,HTML,1,BODY,58,IMG" data-selector="#body > img:nth-child(50)" data-snippet="<img src=&quot;https://sp.analytics.yahoo.com/spp.pl?a=10001860707281&amp;amp;.yp=26980&amp;amp;js=no&quot;>">&lt;img src="https://sp.analytics.yahoo.com/spp.pl?a=10001860707281&amp;amp;.yp=26980&amp;amp;js=no"&gt;</span></span></div>
+                                    </div>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div><!-- ./ end list-group -->
+                  </div><!-- ./ end slide-container -->
+                </div><!-- ./ end panel-body -->
+              </div><!-- ./ end panel panel-default-->
+          </div>
+</div>
+                </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <div class="donut-chart" style="margin-top: 60px;">
+                    <div class="chartbox"">
+                        <div id="failureChart3" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;50&quot;,&quot;#19A7F5&quot;], &quot;1&quot;:[&quot;50&quot;,&quot;50&quot;,&quot;#55DB2E&quot;] }" data-chart-text="50%" data-chart-caption="Accessibility Rate"></div>
+                      </div>
+                    </div>
+                </div>
+
+              </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- Performence web page details -->
+<div id="practicespage" class="content body" style="display: none;">
+  <a href="#" id="crossbtn04" class="cross-close"><i class="fa fa-remove" aria-hidden="true"></i></a>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 col-xs-12">
+        <!-- DONUT CHART BLOCK (LEFT-CONTAINER) --> 
+        <div class="donut-chart-block block block-2"> 
+              <div class="">
+                <div class="col-md-9 col-xs-12">
+                  <div id="external-events" class="external-events">
+                    <div class="event-header event-header2">
+                      <span>Best Practices</span>
+                    </div>                    
+                    <div class="event-body event-body-2">
+                      <div class="fc-event fc-event-2">These encapsulate your app's current performance and opportunities to improve it.</div>
+<!--                       <div class="fc-event ">First Interactive (beta)</div>
+                      <div class="fc-event ">Consistently Interactive (beta)</div>
+                      <div class="fc-event ">Perceptual Speed Index:  21,991 (target: < 1,250)</div>
+                      <div class="fc-event ">Estimated Input Latency:  1,824 ms (target: < 50 ms)</div> -->
+                    </div>
+<!--- accordian block -->
+          <div class="page-accordian-block">
+              <div class="accordion-page-header">
+                <h2>9 Failed Audits</h2>
+                <!-- <p>These metrics encapsulate your app's performance across a number of dimensions.</p> -->
+                </div>
+             <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="slide-container">
+                    <div class="list-group" id="mg-multisidetabs">
+                      <a href="#" class="list-group-item"><span>First meaningful paint</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div><!-- ./ end list-group -->
+                  </div><!-- ./ end slide-container -->
+                </div><!-- ./ end panel-body -->
+              </div><!-- ./ end panel panel-default-->
+          </div>
+<!--- accordian block -->
+          <div class="page-accordian-block">
+              <div class="accordion-page-header">
+                <h2>7 Passed Audits</h2>
+                <!-- <p>These metrics encapsulate your app's performance across a number of dimensions.</p> -->
+                </div>
+             <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="slide-container">
+                    <div class="list-group" id="mg-multisidetabs">
+                      <a href="#" class="list-group-item"><span>First meaningful paint</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item"><span>First Interactive (beta)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <div class="panel list-sub">
+                        <div class="panel-body">
+                          <div class="list-group">
+                            <div class="list-group-content">
+                                    A fast page load over a 3G network ensures a good mobile user experience. Learn more.
+        <span class="u-color-error">Audit error: The main thread was busy for the entire trace recording. First Interactive requires the main thread to be idle for several seconds.</span>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div><!-- ./ end list-group -->
+                  </div><!-- ./ end slide-container -->
+                </div><!-- ./ end panel-body -->
+              </div><!-- ./ end panel panel-default-->
+          </div>          
+</div>
+                </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <div class="donut-chart" style="margin-top: 60px;">
+                    <div class="chartbox"">
+                        <div id="chart3" chart-type="donut" data-chart-max="100" data-chart-segments="{  &quot;0&quot;:[&quot;0&quot;,&quot;85&quot;,&quot;#FDCA00&quot;], &quot;1&quot;:[&quot;85&quot;,&quot;85&quot;,&quot;#8100C8&quot;]  }" data-chart-initial-rotate="90" data-chart-caption="Best Practices" data-chart-text="70%"></div>
+                      </div>
+                    </div>
+                </div>
+
+              </div>
+          </div>
+    </div>
+  </div>
+</div>
+<p class='nota-final'></p>
+</div>
+            </div>
+          </div>
+    
+      </div>
+
+    <!-- jQuery 2.1.4 -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+    <script src="js/donut-chart.js"></script>
+    <script src="js/multi-level-accordian.js"></script>
+    
+        <script src="js/ajax.js"></script> 
+  <script>
+$('#menu-button').click(function(event) {
+     $('#hide-menu').toggleClass('show-menu');
+    $('#full-slide').toggleClass('full-screen');
+});
+      
+$('#acord').click(function(event) {
+     $('#001').toggleClass('open001');
+});
+      
+$('#drop-down').click(function(event) {
+     $('#002').toggleClass('open002');
+});
+
+$('#hide-menu').find('a').click(function(event) {
+  $('.sidebar-menu li a').removeClass('active');
+   $(this).toggleClass('active');
+});
+
+$("#pwa").on('click', function() {
+   $("#DASHBOARD").hide();
+   $("#progressiveapp").show();
+   $("#performancepage").hide();
+   $("#accessibilitypage").hide();
+   $("#practicespage").hide();
+   $("#crossbtn01").show();
+
+});
+
+$("#pwa1").on('click', function() {
+   $("#DASHBOARD").hide();
+   $("#progressiveapp").show();
+   $("#performancepage").hide();
+   $("#accessibilitypage").hide();
+   $("#practicespage").hide();
+   $("#crossbtn01").show();
+});
+
+$("#crossbtn01").on('click', function() {
+  $(this).hide();
+   $("#DASHBOARD").show();
+   $("#progressiveapp").hide();
+});
+
+$("#percard").on('click', function() {
+   $("#DASHBOARD").hide();
+   $("#performancepage").show();
+   $("#progressiveapp").hide();
+   $("#accessibilitypage").hide();
+   $("#practicespage").hide();
+   $("#crossbtn02").show();
+});
+
+$("#percard1").on('click', function() {
+   $("#DASHBOARD").hide();
+   $("#performancepage").show();
+   $("#progressiveapp").hide();
+   $("#accessibilitypage").hide();
+   $("#practicespage").hide();
+   $("#crossbtn02").show();
+});
+
+$("#crossbtn02").on('click', function() {
+  $(this).hide();
+   $("#DASHBOARD").show();
+   $("#performancepage").hide();
+});
+
+$("#acesscard").on('click', function() {
+   $("#DASHBOARD").hide();
+   $("#accessibilitypage").show();
+   $("#performancepage").hide();
+   $("#progressiveapp").hide();
+   $("#practicespage").hide();
+   $("#crossbtn03").show();
+});
+
+$("#acesscard1").on('click', function() {
+   $("#DASHBOARD").hide();
+   $("#accessibilitypage").show();
+   $("#performancepage").hide();
+   $("#progressiveapp").hide();
+   $("#practicespage").hide();
+   $("#crossbtn03").show();
+});
+
+
+$("#crossbtn03").on('click', function() {
+  $(this).hide();
+   $("#DASHBOARD").show();
+   $("#accessibilitypage").hide();
+});
+
+$("#practicecard").on('click', function() {
+   $("#DASHBOARD").hide();
+   $("#practicespage").show();
+   $("#accessibilitypage").hide();
+   $("#performancepage").hide();
+   $("#progressiveapp").hide();
+   $("#crossbtn04").show();
+});
+
+$("#practicecard1").on('click', function() {
+   $("#DASHBOARD").hide();
+   $("#practicespage").show();
+   $("#accessibilitypage").hide();
+   $("#performancepage").hide();
+   $("#progressiveapp").hide();
+   $("#crossbtn04").show();
+});
+
+$("#crossbtn04").on('click', function() {
+  $(this).hide();
+   $("#DASHBOARD").show();
+   $("#practicespage").hide();
+});
+      </script>
+  </body>
+</html>
